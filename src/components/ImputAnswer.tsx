@@ -1,7 +1,6 @@
 import React from "react";
 import {useState} from "react";
-import {Form, Field, useFormState} from 'react-final-form';
-import axios from 'axios';
+import {Field} from 'react-final-form'
 
 export const ImputAnswer = () =>{
     const [value, setValue] = useState('');
@@ -23,9 +22,14 @@ export const ImputAnswer = () =>{
         
     }
     return(
-        <div>
-        <input style={{color: !valueError? 'red':'black'}}  value={value} onChange={e => validateValue(e)} onBlur={e => valueHandler(e)} name='value' type="text" className="form-control" placeholder="Введите число"/>
-        </div>
-    );
+        <Field name = 'imputField'>{
+            props =>(
+            <input style={{color: !valueError? 'red':'black'}}  value={value} onChange={e => validateValue(e)} onBlur={e => valueHandler(e)} name='value' type="text" className="form-control" placeholder="Введите число"/>
+            )}
+        </Field>
+        );
 
 }
+
+{/* <input style={{color: !valueError? 'red':'black'}}  value={value} onChange={e => validateValue(e)} onBlur={e => valueHandler(e)} name='value' type="text" className="form-control" placeholder="Введите число"/> */}
+

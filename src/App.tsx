@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Form, Field, useForm} from 'react-final-form';
 import {ImputAnswer} from './components/ImputAnswer';
 import axios from 'axios';
-import { AnyNsRecord } from 'dns';
 
 function App() {
   const onSubmit = (e:any) => {
@@ -28,7 +27,8 @@ function App() {
             <div className='d-inline-flex form-group'>
               <span>2</span>
               <span>+</span>
-              <Field name="answerField" component="input" placeholder="answer" />
+              {/* <ImputAnswer/> */}
+              <Field name="answerField" component={ImputAnswer} placeholder="answer" /> 
               <span>=</span>
               <span >6</span>
               <button type="submit" className="btn btn-primary">Submit</button>

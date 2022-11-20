@@ -1,8 +1,6 @@
-// import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Form, Field } from 'react-final-form';
-// import { ImputAnswer } from './components/ImputAnswer';
 import axios from 'axios';
 
 function App() {

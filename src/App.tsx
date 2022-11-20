@@ -18,6 +18,7 @@ function App() {
     <div>
       <header style={{ height: 100 }}></header>
       <div className="container">
+        <h1>Решите уравнение</h1>
         <Form
           onSubmit={onSubmit}
           render={({ handleSubmit }) => (

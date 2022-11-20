@@ -17,22 +17,25 @@ function App() {
   };
 
   return (
-    <div className="container">
-      <Form
-        onSubmit={onSubmit}
-        render={({ handleSubmit }) => (
-          <form onSubmit={handleSubmit}>
-            <div className='d-inline-flex align-items-center'>
-              <span className='display-6 me-2'>2</span>
-              <span className='display-6 me-2'>+</span>
-              <Field className="me-2" name="answerField" component={'input'} placeholder="X" style={{ width: "30px" }} />
-              <span className='display-6 me-2'>=</span>
-              <span className='display-6 me-2'>6</span>
-              <button type="submit" className="btn btn-outline-dark btn-sm ms-2">OK</button>
-            </div>
-          </form>
-        )}
-      />
+    <div>
+      <header style={{ height: 100 }}></header>
+      <div className="container">
+        <Form
+          onSubmit={onSubmit}
+          render={({ handleSubmit }) => (
+            <form onSubmit={handleSubmit}>
+              <div className='d-inline-flex align-items-center'>
+                <span className='display-6 me-2'>2</span>
+                <span className='display-6 me-2'>+</span>
+                <Field className="me-2" name="answerField" component={'input'} placeholder="X" style={{ width: "30px" }} />
+                <span className='display-6 me-2'>=</span>
+                <span className='display-6 me-2'>6</span>
+                <button type="submit" className="btn btn-outline-dark btn-sm ms-2">OK</button>
+              </div>
+            </form>
+          )}
+        />
+      </div>
     </div>
   );
 }

@@ -10,9 +10,9 @@ export const ImputAnswer = (props: any) => {
         >{
                 props => (
                     <input
-                        style={{ color: props.meta.error ? 'red' : 'black' }}
+                        style={{ color: props.meta.error ? 'red' : 'black', width:'30px' }}
                         {...props.input}
-                        type="text" className="form-control" placeholder="Введите число" />
+                        type="text" className="me-2" placeholder="x" />
                 )}
         </Field>
     );

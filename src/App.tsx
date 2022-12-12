@@ -3,6 +3,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import { Form, Field } from 'react-final-form';
 // import axios from 'axios';
 import { DevJunTest } from './components/dev-jun-test/dev-jun-test';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <div>{'>'}o_O{'<'}</div>,
+  },
+  {
+    path: "/bunker",
+    element: <h3>When you have me, you feel like sharing me. <br /> If you do share me, you don't have me. <br /> What am I?</h3>,
+  },
+]);
 
 function App() {
   // const onSubmit = (e: any) => {
@@ -16,7 +32,8 @@ function App() {
   // };
   return (
     <div>
-      <DevJunTest />
+      <div className="container"><RouterProvider router={router} /></div>
+      {/* <DevJunTest /> */}
       {/* <header style={{ height: 100 }}></header>
       <div className="container">
         <h1>Решите уравнение</h1>

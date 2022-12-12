@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,18 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+input,
+textarea {
+  width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  /* background-image: url(https://hdpic.club/uploads/posts/2021-12/1639458064_9-hdpic-club-p-mototsikl-risunok-9.jpg);
+  background-position: right bottom;
+  background-size: 100px;
+  background-repeat: no-repeat; */
 }

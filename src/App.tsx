@@ -1,22 +1,23 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Form, Field } from 'react-final-form';
-import axios from 'axios';
+// import { Form, Field } from 'react-final-form';
+// import axios from 'axios';
+import { DevJunTest } from './components/dev-jun-test/dev-jun-test';
 
 function App() {
-  const onSubmit = (e: any) => {
-    axios({
-      method: 'post',
-      url: '/?service=t_1',
-      data: {
-        a: e.answerField
-      }
-    });
-  };
-
+  // const onSubmit = (e: any) => {
+  //   axios({
+  //     method: 'post',
+  //     url: '/?service=t_1',
+  //     data: {
+  //       a: e.answerField
+  //     }
+  //   });
+  // };
   return (
     <div>
-      <header style={{ height: 100 }}></header>
+      <DevJunTest />
+      {/* <header style={{ height: 100 }}></header>
       <div className="container">
         <h1>Решите уравнение</h1>
         <Form
@@ -34,7 +35,7 @@ function App() {
             </form>
           )}
         />
-      </div>
+      </div> */}
     </div>
   );
 }
